@@ -66,7 +66,7 @@ Create the structure of how you want the website to look like.
 
 # SiteMap
 
- |HOMEPAGE (index.html) |             
+ | HOMEPAGE (index.html) |             
     - hero image                            
     - organization's history
     - brief introduction 
