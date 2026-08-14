@@ -2,7 +2,7 @@
 ST10509313_MOKGADI_SELEPE
 GROUP1
 
-# GitHUB Link
+# GitHub Link
 https://github.com/mokgadinellys-creator/WEDE5020_POE.git
 
 # Project Overview
