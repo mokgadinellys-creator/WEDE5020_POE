@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Your Wash | King's Car Wash</title>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <div>
+            <div>
+        
+        <h1 style="color: goldenrod; text-align: center;">King's Car Wash</h1>
+        <button>=</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Book Now</a></li>
+            </ul>
+            </nav>
+          </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h2 style="color: goldenrod;">Book Your Wash</h2>
+                    <p>Fill out the form below to book your car wash appointment:</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section>
+            <div>
+                <form action="submit_enquiry.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="exterior">Exterior Wash</option>
+                        <option value="interior">Interior Detailing</option>
+                        <option value="full-service">Full-Service Package</option>
+                    </select>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="message">Additional service:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+                <h3 style="color: goldenrod;">Thank you for your enquiry!</h3>
+                <p>We will get back to you shortly.</p>
+
+                <!--CTA-->
+                <div>
+                    <h2 style="color: goldenrod;">Need help with choosing a service?</h2>
+                    <p>Call us or WhatsApp us- we'll recommend the best option for your vehicle.</p>
+                    <a href="tel:0754313701">Call Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2025 King's Car Wash. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
