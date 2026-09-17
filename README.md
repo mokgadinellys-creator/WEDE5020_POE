@@ -1,4 +1,4 @@
-# WEDE5020_POE_PART1
+# WEDE5020_POE_PART1 & 2
 ST10509313_MOKGADI_SELEPE
 GROUP1
 
@@ -11,11 +11,15 @@ It is an existing local business in my community.
 It specializes in detailing cars, making them feel and look brand new.
 The website is for the business to get more recognition.
 I am going to make use of HTML for structure, CSS for desogn to attract people and JavaScript for functionality.
+I added Changelog file that I did not have in part 1. 
 
 # PART1
 Part 1 focuses on HTML. Create web pages of the website to be able to know what is needed for the website to be successful.
 Part1 I get all the information I need to know about the business. I do all the research by gathering: images,social media platforms, contact details, location of the business and why it needs the website.
 Create the structure of how you want the website to look like.
+
+# PART2
+
 
 # Website Goals and Objectives
 •	Generate qualified bookings and enquiries from the local target market.
