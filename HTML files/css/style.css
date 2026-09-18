@@ -38,7 +38,6 @@ body {
    ============================================================ */
 
 :root {
-    /* Brand Colours */
     --colour-black: #1A1A1A;
     --colour-gold: #B8952E;
     --colour-gold-light: #D4AF37;
@@ -49,18 +48,15 @@ body {
     --colour-grey: #6B6B6B;
     --colour-light-grey: #E0DCD8;
 
-    /* Typography */
     --font-heading: 'Roboto', 'Montserrat', 'Poppins', Arial, sans-serif;
     --font-body: 'Roboto', 'Inter', 'Open Sans', Arial, sans-serif;
 
-    /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 1.5rem;
     --space-lg: 2.5rem;
     --space-xl: 4rem;
 
-    /* Effects */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.18);
@@ -95,7 +91,6 @@ h2 {
     position: relative;
 }
 
-/* Gold underline for h2 */
 h2::after {
     content: '';
     display: block;
@@ -194,7 +189,6 @@ header a {
     font-weight: 700;
 }
 
-/* Logo */
 header > div > div > a {
     font-size: 1.5rem;
     color: var(--colour-gold);
@@ -206,7 +200,6 @@ header > div > div > a:hover {
     text-decoration: none;
 }
 
-/* Hamburger button (hidden on desktop) */
 header button {
     display: none;
     background: none;
@@ -224,7 +217,6 @@ header button:hover {
     color: var(--colour-white);
 }
 
-/* Navigation */
 nav ul {
     display: flex;
     gap: 0.5rem;
@@ -249,7 +241,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* Book Now button (last nav item) */
 nav ul li:last-child a {
     background-color: var(--colour-gold);
     color: var(--colour-white);
@@ -267,10 +258,8 @@ nav ul li:last-child a:hover {
 
 /* ============================================================
    6. HERO SECTION (index.html)
-   Structure: <section> > <div> > <img> + <div> (content)
    ============================================================ */
 
-/* Style the first section on the homepage as a hero */
 main > section:first-child {
     background-color: var(--colour-black);
     border-radius: var(--radius-md);
@@ -280,16 +269,13 @@ main > section:first-child {
     margin-bottom: var(--space-lg);
 }
 
-/* Hero image */
 main > section:first-child img {
     width: 100%;
     height: auto;
-    max-height: none;
     object-fit: contain;
     display: block;
 }
 
-/* Content wrapper beneath hero image */
 main > section:first-child > div > div {
     padding: var(--space-lg);
     color: var(--colour-white);
@@ -309,7 +295,6 @@ main > section:first-child p {
     max-width: 650px;
 }
 
-/* Hero buttons row */
 main > section:first-child > div > div > div:first-of-type {
     display: flex;
     gap: var(--space-sm);
@@ -317,7 +302,6 @@ main > section:first-child > div > div > div:first-of-type {
     margin-top: var(--space-md);
 }
 
-/* Stats row (450+, 5.0*, 4) */
 main > section:first-child > div > div > div:last-of-type {
     display: flex;
     gap: var(--space-lg);
@@ -348,7 +332,6 @@ main > section:first-child > div > div > div:last-of-type > div > div:last-child
     letter-spacing: 0.5px;
 }
 
-/* The "Before & After" section inside the hero — nested inside first section */
 main > section:first-child > div > div > div:last-of-type ~ div,
 main > section:first-child > div > div > div + div + div + div {
     margin-top: var(--space-lg);
@@ -358,15 +341,12 @@ main > section:first-child > div > div > div > h2 + img,
 main > section:first-child > div > div > div:last-child img {
     margin-top: var(--space-sm);
     border-radius: var(--radius-md);
-    max-height: none;
     object-fit: contain;
     width: 100%;
 }
 
-/* Fix for the Before/After block that appears after stats */
 main > section:first-child > div > div > div:last-of-type img {
     width: 100%;
-    max-height: none;
     object-fit: contain;
     border-radius: var(--radius-md);
     margin-top: var(--space-sm);
@@ -377,7 +357,6 @@ main > section:first-child > div > div > div:last-of-type img {
    7. BUTTONS (Call-to-Action)
    ============================================================ */
 
-/* Primary CTA (gold) — booking links */
 a[href="enquiry.html"] {
     display: inline-block;
     padding: 0.85rem 2rem;
@@ -404,7 +383,6 @@ a[href="enquiry.html"]:hover {
     text-decoration: none;
 }
 
-/* Secondary CTA (outline) */
 a[href="services.html"],
 a[href="about.html"] {
     display: inline-block;
@@ -431,7 +409,6 @@ a[href="about.html"]:hover {
     text-decoration: none;
 }
 
-/* Contact buttons (phone, TikTok) */
 a[href^="tel:"],
 a[href^="https://www.tiktok"] {
     display: inline-block;
@@ -459,7 +436,6 @@ a[href^="https://www.tiktok"]:hover {
     text-decoration: none;
 }
 
-/* Context: buttons inside hero get lighter/white outline style */
 main > section:first-child a[href="services.html"] {
     color: var(--colour-white);
     border-color: var(--colour-white);
@@ -474,7 +450,6 @@ main > section:first-child a[href="services.html"]:hover {
 
 /* ============================================================
    8. SERVICE CARDS (services.html)
-   Structure: <section> > <div> > <div id="...">
    ============================================================ */
 
 main section > div > div[id="exterior"],
@@ -498,7 +473,6 @@ main section > div > div[id="additional-services"]:hover {
     box-shadow: var(--shadow-lg);
 }
 
-/* Price styling */
 main section > div > div[id="exterior"] > p:first-of-type,
 main section > div > div[id="interior"] > p:first-of-type,
 main section > div > div[id="full-service"] > p:first-of-type {
@@ -509,7 +483,6 @@ main section > div > div[id="full-service"] > p:first-of-type {
     margin: 0.5rem 0;
 }
 
-/* Service feature list */
 main section > div > div[id="exterior"] ul,
 main section > div > div[id="interior"] ul,
 main section > div > div[id="full-service"] ul,
@@ -528,7 +501,6 @@ main section > div > div[id="additional-services"] ul li {
     border-bottom: 1px solid #f0f0f0;
 }
 
-/* Gold checkmark before each list item */
 main section > div > div[id="exterior"] ul li::before,
 main section > div > div[id="interior"] ul li::before,
 main section > div > div[id="full-service"] ul li::before,
@@ -588,7 +560,6 @@ form textarea {
     margin-bottom: var(--space-sm);
 }
 
-/* Focus state — gold border and glow */
 form input:focus,
 form select:focus,
 form textarea:focus {
@@ -636,7 +607,6 @@ form button[type="submit"]:active {
 
 /* ============================================================
    10. GALLERY (services.html)
-   Structure: <section id="gallery"> > <div> > <div> > <img>...
    ============================================================ */
 
 section[id="gallery"] > div > div {
@@ -665,11 +635,8 @@ section[id="gallery"] img:hover {
 
 /* ============================================================
    11. TESTIMONIALS (index.html)
-   Structure: 3 sibling <div> elements, each with 3 <p> tags
    ============================================================ */
 
-/* The testimonials section is the one containing a div with multiple p's that start with ***** */
-/* Target testimonial blocks by proximity: any <div> with 3 <p> siblings that is a direct child of <section> */
 main > section > div + div {
     background-color: var(--colour-white);
     padding: var(--space-lg);
@@ -685,7 +652,6 @@ main > section > div + div:hover {
     box-shadow: var(--shadow-md);
 }
 
-/* Star rows (any <p> containing only asterisks) */
 main > section p:first-child {
     color: var(--colour-gold);
     font-size: 1.2rem;
@@ -794,12 +760,10 @@ footer ul li a:hover {
         font-size: 1.5rem;
     }
 
-    /* Show hamburger button */
     header button {
         display: block;
     }
 
-    /* Hide nav by default on mobile */
     nav ul {
         display: none;
         flex-direction: column;
@@ -810,7 +774,6 @@ footer ul li a:hover {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Show nav when opened via JS */
     nav ul.is-open {
         display: flex;
     }
@@ -825,7 +788,6 @@ footer ul li a:hover {
         padding: 0.75rem 1rem;
     }
 
-    /* Hero adjustments */
     main > section:first-child > div > div {
         padding: var(--space-md);
     }
@@ -835,7 +797,6 @@ footer ul li a:hover {
         justify-content: center;
     }
 
-    /* Service cards */
     main section > div > div[id="exterior"],
     main section > div > div[id="interior"],
     main section > div > div[id="full-service"],
@@ -843,12 +804,10 @@ footer ul li a:hover {
         padding: var(--space-md);
     }
 
-    /* Form */
     form {
         padding: var(--space-md);
     }
 
-    /* Gallery */
     section[id="gallery"] > div > div {
         grid-template-columns: 1fr;
     }
@@ -857,7 +816,6 @@ footer ul li a:hover {
         height: 220px;
     }
 
-    /* Map */
     iframe {
         height: 320px;
     }
@@ -886,7 +844,6 @@ footer ul li a:hover {
         font-size: 1.15rem;
     }
 
-    /* Hero */
     main > section:first-child img {
         max-height: 260px;
     }
@@ -897,7 +854,6 @@ footer ul li a:hover {
         align-items: center;
     }
 
-    /* Stack all buttons and make them full width */
     a[href="enquiry.html"],
     a[href="services.html"],
     a[href="about.html"],
@@ -909,29 +865,24 @@ footer ul li a:hover {
         margin: 0.35rem 0;
     }
 
-    /* Service prices */
     main section > div > div[id="exterior"] > p:first-of-type,
     main section > div > div[id="interior"] > p:first-of-type,
     main section > div > div[id="full-service"] > p:first-of-type {
         font-size: 1.5rem;
     }
 
-    /* Form */
     form {
         padding: var(--space-sm);
     }
 
-    /* Gallery */
     section[id="gallery"] img {
         height: 200px;
     }
 
-    /* Map */
     iframe {
         height: 260px;
     }
 
-    /* Footer */
     footer {
         text-align: center;
     }
@@ -1001,8 +952,4 @@ textarea:focus-visible {
         color: black;
         font-size: 12pt;
     }
-}/* ============================================================
-   KING'S CAR WASH — MAIN STYLESHEET
-   WEDE5020 Portfolio of Evidence — Part 2
-   Student: Mokgadi Laura Selepe (ST10509313)
-   ============================================================ */
+}
