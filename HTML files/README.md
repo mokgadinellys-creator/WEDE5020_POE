@@ -19,7 +19,9 @@ Part1 I get all the information I need to know about the business. I do all the 
 Create the structure of how you want the website to look like.
 
 # PART2
-
+Part 2 focuses on CSS. Where you start designing the HTML structure to be more appealing. 
+Create a sytlesheet link for CSS file to all the 5 HTML files as they work together to bring design to the website.
+CSS's aim is to attrack potential/future customers to open the website.
 
 # Website Goals and Objectives
 •	Generate qualified bookings and enquiries from the local target market.
@@ -107,6 +109,8 @@ Create the structure of how you want the website to look like.
 4.	Jerusha, W, 2026 Best Domain Registration in South Africa (2026): Prices, Providers & What Nobody Tells You. Available at: https://truehost.co.za/best-domain-registration-in-south-africa/> [Accessed at 8 August 2026]
 5.	Oliit, 2015. .co.za Domain Price: Compare Different registrars and choose the best [online]. Available at: https://olitt.com/co-za-domain-price/ [Accessed at 8 August 2026]
 6.	Mikhaill, 2026. How Much Does a Website Cost in South Africa? (2026 Price Guide). Available at: https://www.syniqsolutions.co.za/blog/how-much-does-a-website-cost-south-africa [Accessed at 9 August 2026] 
+7. W3Schools, 2026. HTML Style CSS. Available at: https://www.w3schools.com/HTML/html_css.asp [Accessed at 18 September 2026]
+8. Mozilla Developer Network (MDN). 2026. CSS: Cascading Style Sheets. Availabe at: https://developer.mozilla.org/en-US/docs/Web/CSS [Acessed at 18 September 2026]
 
 
 
