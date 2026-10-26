@@ -272,7 +272,7 @@ main > section:first-child {
 main > section:first-child img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: auto;
     display: block;
 }
 
