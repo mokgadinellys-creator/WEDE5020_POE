@@ -271,8 +271,8 @@ main > section:first-child {
 
 main > section:first-child img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 400px;
+    object-fit: cover;
     display: block;
 }
 
@@ -357,7 +357,8 @@ main > section:first-child > div > div > div:last-of-type img {
    7. BUTTONS (Call-to-Action)
    ============================================================ */
 
-a[href="enquiry.html"] {
+/* Base style for ALL buttons */
+.btn {
     display: inline-block;
     padding: 0.85rem 2rem;
     margin: 0.35rem 0.5rem 0.35rem 0;
@@ -366,15 +367,21 @@ a[href="enquiry.html"] {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: var(--radius-pill);
+    transition: var(--transition);
+    cursor: pointer;
+    text-align: center;
+}
+
+/* The Gold Button (Book Now) */
+.btn-primary {
     background-color: var(--colour-gold);
     color: var(--colour-white);
     border: 2px solid var(--colour-gold);
-    border-radius: var(--radius-pill);
-    text-decoration: none;
-    transition: var(--transition);
 }
 
-a[href="enquiry.html"]:hover {
+.btn-primary:hover {
     background-color: var(--colour-gold-dark);
     border-color: var(--colour-gold-dark);
     color: var(--colour-white);
@@ -383,68 +390,33 @@ a[href="enquiry.html"]:hover {
     text-decoration: none;
 }
 
-a[href="services.html"],
-a[href="about.html"] {
-    display: inline-block;
-    padding: 0.85rem 2rem;
-    margin: 0.35rem 0.5rem 0.35rem 0;
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* The Outline Button (View Services) */
+.btn-outline {
     background-color: transparent;
     color: var(--colour-gold);
     border: 2px solid var(--colour-gold);
-    border-radius: var(--radius-pill);
-    text-decoration: none;
-    transition: var(--transition);
 }
 
-a[href="services.html"]:hover,
-a[href="about.html"]:hover {
+.btn-outline:hover {
     background-color: var(--colour-gold);
     color: var(--colour-white);
     transform: translateY(-3px);
     text-decoration: none;
 }
 
-a[href^="tel:"],
-a[href^="https://www.tiktok"] {
-    display: inline-block;
-    padding: 0.85rem 2rem;
-    margin: 0.35rem 0.5rem 0.35rem 0;
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* The Dark Button (Call/WhatsApp) */
+.btn-dark {
     background-color: var(--colour-black);
     color: var(--colour-white);
     border: 2px solid var(--colour-black);
-    border-radius: var(--radius-pill);
-    text-decoration: none;
-    transition: var(--transition);
 }
 
-a[href^="tel:"]:hover,
-a[href^="https://www.tiktok"]:hover {
+.btn-dark:hover {
     background-color: var(--colour-gold);
     border-color: var(--colour-gold);
     color: var(--colour-white);
     transform: translateY(-3px);
     text-decoration: none;
-}
-
-main > section:first-child a[href="services.html"] {
-    color: var(--colour-white);
-    border-color: var(--colour-white);
-}
-
-main > section:first-child a[href="services.html"]:hover {
-    background-color: var(--colour-white);
-    color: var(--colour-black);
-    border-color: var(--colour-white);
 }
 
 
@@ -845,7 +817,8 @@ footer ul li a:hover {
     }
 
     main > section:first-child img {
-        max-height: 260px;
+        max-height: 250px;
+        object-fit: cover;
     }
 
     main > section:first-child > div > div > div:last-of-type {
@@ -854,15 +827,11 @@ footer ul li a:hover {
         align-items: center;
     }
 
-    a[href="enquiry.html"],
-    a[href="services.html"],
-    a[href="about.html"],
-    a[href^="tel:"],
-    a[href^="https://www.tiktok"] {
+     .btn {
         display: block;
         width: 100%;
         text-align: center;
-        margin: 0.35rem 0;
+        margin: 0.5rem 0;
     }
 
     main section > div > div[id="exterior"] > p:first-of-type,
