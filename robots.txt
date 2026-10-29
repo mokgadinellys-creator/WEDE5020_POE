@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /submit_enquiry.php
+
+Sitemap: https://kingscarwash.netlify.app/sitemap.xml
