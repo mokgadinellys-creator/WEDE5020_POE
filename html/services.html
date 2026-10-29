@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Services &amp; Pricing | King's Car Wash</title>
+
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="View King's Car Wash service packages and pricing — exterior wash from R110, interior detailing, full-service packages and additional detailing services.">
+    <meta name="keywords" content="car wash prices Modjadjiskloof, interior detailing prices, full service car wash, engine bay cleaning, paint protection">
+    <meta name="author" content="Mokgadi Laura Selepe">
+    <link rel="canonical" href="https://kingscarwash.netlify.app/services.html">
+
 
     <!--stylesheet links-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -19,7 +28,7 @@
             <div>
         
         <a href="index.html">KING'S CAR WASH</a>
-        <button type="button" aria-label="Toggle navigation">☰</button>
+        <button type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -43,6 +52,14 @@
                 </div>
             </div>
         </section>
+
+             <!-- Service Search Filter -->
+        <div class="service-search">
+            <label for="serviceSearch">Search services:</label>
+            <input type="search" id="serviceSearch" placeholder="e.g. interior, tire, engine…" aria-describedby="searchHelp">
+            <small id="searchHelp">Type to filter services by name or description.</small>
+            <p id="searchStatus" role="status" aria-live="polite"></p>
+        </div>
 
         <!-- Services List -->
         <section>
@@ -112,17 +129,70 @@
                 </div>
             </section>
 
+            
+        <!-- FAQ ACCORDION -->
+        <section id="faq-accordion">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        Do you offer doorstep pickup and delivery?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Yes — we offer pickup and drop-off for clients in and around Modjadjiskloof. Mention it in your enquiry form and we'll confirm availability.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        How long does a full-service package take?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>A full-service package typically takes 2–3 hours depending on vehicle size and condition.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        Can I pay on collection?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Yes — payment is made on collection after you've inspected the finished vehicle.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        Do you clean bakkies and SUVs?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Absolutely — bakkie and SUV pricing is listed above on this page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
             <!--GALLERY-->
             <section id="gallery">
                 <div>
                     <h2>Gallery</h2>
                     <p>Check out some of our work in the gallery below:</p>
-                    <div>
-                        <img src="../images/engine bay wash.jpeg" alt="Engine Wash">
-                        <img src="../images/car-interior-detailing.jpeg" alt="Interior Detailing">
-                        <img src="../images/car-interior2-detailing.jpeg" alt="Interior Detailing 2">
-                        <img src="../images/exterior-car-wash.jpeg" alt="Normal Wash">
-                            </div>
+                    <div class="gallery-grid">
+                        
+                        <a href="../images/engine bay wash.jpeg" class="lightbox-link" data-caption="Engine Bay Wash">
+                            <img src="../images/engine bay wash.jpeg" alt="Engine Wash">
+                        </a>
+                        <a href="../images/car-interior-detailing.jpeg" class="lightbox-link" data-caption="Interior Detailing">
+                            <img src="../images/car-interior-detailing.jpeg" alt="Interior Detailing">
+                        </a>
+                        <a href="../images/car-interior2-detailing.jpeg" class="lightbox-link" data-caption="Interior Detailing 2">
+                            <img src="../images/car-interior2-detailing.jpeg" alt="Interior Detailing 2">
+                        </a>
+                        <a href="../images/exterior-car-wash.jpeg" class="lightbox-link" data-caption="Normal Wash">
+                            <img src="../images/exterior-car-wash.jpeg" alt="Normal Wash">
+                        </a>
+                    </div>
                         </div>
                         </section>
 
@@ -135,11 +205,20 @@
                             </div>
                             </main>
 
+                             <!-- LIGHTBOX OVERLAY -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+    </div>
+
                             <!-- Footer -->
                             <footer>
                                 <div>
                                    
-                                    <p>Contact: 0754313701 | Tiktok: https://www.tiktok.com/@king.car.detailin </p>
+                                    <p>Contact: 0754313701 | Tiktok: <a href="https://www.tiktok.com/@king.car.detailin" target="_blank" rel="noopener">King's Car Detailing</a></p>
                                         </div>
 
                                         <!--Quick Links-->

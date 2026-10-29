@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Wash | King's Car Wash</title>
+
+    <title>Book Your Wash | King's Car Wash Appointment Enquiry</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Book your car wash appointment at King's Car Wash. Get instant quotes on exterior wash, interior detailing and full-service packages.">
+    <meta name="keywords" content="book car wash, car wash appointment Modjadjiskloof, car detailing booking, King's Car Wash booking">
+    <meta name="author" content="Mokgadi Laura Selepe">
+    <link rel="canonical" href="https://kingscarwash.netlify.app/enquiry.html">
 
     <!--stylesheet links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +26,7 @@
             <div>
         
         <a href="index.html">KING'S CAR WASH</a>
-        <button type="button" aria-label="Toggle navigation">☰</button>
+        <button type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -44,35 +51,59 @@
             </div>
         </section>
 
-        <!-- Booking Form -->
+          <!-- Booking Form -->
         <section>
             <div>
-                <form action="submit_enquiry.php" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <form id="enquiryForm" novalidate>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2">
+                    <span class="error" id="err-name"></span>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    <span class="error" id="err-email"></span>
 
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="0754313701" required>
+                    <label for="phone">Phone (SA format: 0XXXXXXXXX):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0754313701" required pattern="0[0-9]{9}">
+                    <span class="error" id="err-phone"></span>
 
                     <label for="service">Service:</label>
                     <select id="service" name="service" required>
                         <option value="">Select a service</option>
-                        <option value="exterior">Exterior Wash</option>
-                        <option value="interior">Interior Detailing</option>
-                        <option value="full-service">Full-Service Package</option>
+                        <option value="exterior" data-price="110">Exterior Wash — R110</option>
+                        <option value="interior" data-price="400">Interior Detailing — R400</option>
+                        <option value="full-service" data-price="650">Full-Service Package — R650</option>
                     </select>
+                    <span class="error" id="err-service"></span>
+
+                    <label for="vehicle">Vehicle Type:</label>
+                    <select id="vehicle" name="vehicle" required>
+                        <option value="">Select vehicle type</option>
+                        <option value="passenger">Passenger Vehicle</option>
+                        <option value="bakkie">Bakkie</option>
+                    </select>
+                    <span class="error" id="err-vehicle"></span>
 
                     <label for="date">Preferred Date:</label>
                     <input type="date" id="date" name="date" required>
+                    <span class="error" id="err-date"></span>
 
-                    <label for="message">Additional service:</label>
-                    <textarea id="message" name="message"></textarea>
+                    <label for="volunteer">Are you interested in volunteering or sponsoring?</label>
+                    <select id="volunteer" name="volunteer">
+                        <option value="no">No</option>
+                        <option value="volunteer">Yes — I want to volunteer</option>
+                        <option value="sponsor">Yes — I want to sponsor</option>
+                    </select>
+
+                    <label for="message">Additional notes:</label>
+                    <textarea id="message" name="message" maxlength="500"></textarea>
+                    <span class="error" id="err-message"></span>
 
                     <button type="submit">Submit Enquiry</button>
                 </form>
+
+                <div id="enquiryResponse" class="form-response" role="status" aria-live="polite"></div>
+ 
 
                 <!--CTA-->
                 <div>
