@@ -23,6 +23,18 @@ Part 2 focuses on CSS. Where you start designing the HTML structure to be more a
 Create a sytlesheet link for CSS file to all the 5 HTML files as they work together to bring design to the website.
 CSS's aim is to attrack potential/future customers to open the website.
 
+## Testing and Responsiveness (Part 2)
+The website was tested across multiple screen sizes using browser developer tools.
+
+### Desktop View
+<img src="images/desktop view.jpg" alt="desktop view image">
+<img src="images/desktop view2.jpg" alt="desktop view image">
+
+### Mobile View
+<img src="images/mobile view.jpeg" alt="mobile view image">
+<img src="images/mobile view2.jpeg" alt="mobile view image">
+
+
 # Website Goals and Objectives
 •	Generate qualified bookings and enquiries from the local target market.
 •	Position King Car Wash as a premium, trustworthy detailing brand online, matching the quality clients receive in person.
