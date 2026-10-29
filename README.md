@@ -13,27 +13,6 @@ The website is for the business to get more recognition.
 I am going to make use of HTML for structure, CSS for desogn to attract people and JavaScript for functionality.
 I added Changelog file that I did not have in part 1. 
 
-# PART1
-Part 1 focuses on HTML. Create web pages of the website to be able to know what is needed for the website to be successful.
-Part1 I get all the information I need to know about the business. I do all the research by gathering: images,social media platforms, contact details, location of the business and why it needs the website.
-Create the structure of how you want the website to look like.
-
-# PART2
-Part 2 focuses on CSS. Where you start designing the HTML structure to be more appealing. 
-Create a sytlesheet link for CSS file to all the 5 HTML files as they work together to bring design to the website.
-CSS's aim is to attrack potential/future customers to open the website.
-
-## Testing and Responsiveness (Part 2)
-The website was tested across multiple screen sizes using browser developer tools.
-
-### Desktop View
-<img src="images/desktop view.jpg" alt="desktop view image">
-<img src="images/desktop view2.jpg" alt="desktop view image">
-
-### Mobile View
-<img src="images/mobile view.jpeg" alt="mobile view image">
-<img src="images/mobile view2.jpeg" alt="mobile view image">
-
 
 # Website Goals and Objectives
 •	Generate qualified bookings and enquiries from the local target market.
@@ -114,6 +93,57 @@ The website was tested across multiple screen sizes using browser developer tool
                                  - google maps
                                  - contact details
 
+
+ # PART1
+Part 1 focuses on HTML. Create web pages of the website to be able to know what is needed for the website to be successful.
+Part1 I get all the information I need to know about the business. I do all the research by gathering: images,social media platforms, contact details, location of the business and why it needs the website.
+Create the structure of how you want the website to look like.
+
+# PART2
+Part 2 focuses on CSS. Where you start designing the HTML structure to be more appealing. 
+Create a sytlesheet link for CSS file to all the 5 HTML files as they work together to bring design to the website.
+CSS's aim is to attrack potential/future customers to open the website.
+
+## Testing and Responsiveness (Part 2)
+The website was tested across multiple screen sizes using browser developer tools.
+
+### Desktop View
+<img src="images/desktop view.jpg" alt="desktop view image">
+<img src="images/desktop view2.jpg" alt="desktop view image">
+
+### Mobile View
+<img src="images/mobile view.jpeg" alt="mobile view image">
+<img src="images/mobile view2.jpeg" alt="mobile view image">
+
+
+# PART 3 — JavaScript, SEO & Forms
+
+## How to Run Locally
+1. Clone the repo.
+2. Open `index.html` in any modern browser — no build step or backend required.
+3. Live version: https://YOUR-SITE-NAME.netlify.app/
+
+## JavaScript Features
+| Page | Feature | File |
+|---|---|---|
+| all | Hamburger nav toggle with `aria-expanded` | `js/script.js` |
+| index | Dynamic testimonial rotator | `js/script.js` |
+| services | Accordion FAQ with `aria-expanded` | `js/script.js` |
+| services | Gallery lightbox (prev/next, Escape, click-outside) | `js/script.js` |
+| services | Live service search filter | `js/script.js` |
+| contact | Leaflet interactive map | inline CDN script |
+| contact | Contact form validation + `mailto:` email | `js/script.js` |
+| enquiry | Enquiry form validation + instant quote calculation | `js/script.js` |
+
+## SEO Implemented
+- Unique `<title>` and `<meta name="description">` per page
+- Keyword-targeted `<meta name="keywords">` (Modjadjiskloof, Limpopo, mobile detailing)
+- Semantic H1/H2/H3 hierarchy on every page
+- Descriptive image file names and alt text
+- `robots.txt` and `sitemap.xml` at project root
+- Canonical URLs and Open Graph tags
+
+
 # References
 1.	Chloe S, 2024. Mission-driven: The ultimate guide to nonprofit marketing. Available at: https://ortto.com/learn/nonprofit-marketing-strategy/ [Accessed at 8 August 2026]
 2.	Desislava, T, 2024. How to Write a Web Design Proposal. Available at: https://www.esign.co.uk/resources/news-and-insights/how-to-write-a-web-design-proposal/ [Accessed at 9 August 2026]
@@ -123,6 +153,13 @@ The website was tested across multiple screen sizes using browser developer tool
 6.	Mikhaill, 2026. How Much Does a Website Cost in South Africa? (2026 Price Guide). Available at: https://www.syniqsolutions.co.za/blog/how-much-does-a-website-cost-south-africa [Accessed at 9 August 2026] 
 7. W3Schools, 2026. HTML Style CSS. Available at: https://www.w3schools.com/HTML/html_css.asp [Accessed at 18 September 2026]
 8. Mozilla Developer Network (MDN). 2026. CSS: Cascading Style Sheets. Availabe at: https://developer.mozilla.org/en-US/docs/Web/CSS [Acessed at 18 September 2026]
+9. jQuery Foundation. 2026. *jQuery API Documentation*. Available at: https://api.jquery.com/ [Accessed 28 October 2026].
+10. Leaflet. 2026. *Leaflet — an open-source JavaScript library for mobile-friendly interactive maps*. Available at: https://leafletjs.com/ [Accessed 6 October 2026].
+11. OpenStreetMap Contributors. 2026. *OpenStreetMap*. Available at: https://www.openstreetmap.org/ [Accessed 28 October 2026].
+12. Google. 2026. *Google Search Central — SEO Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide [Accessed 29 October 2026].
+13. MDN Web Docs. 2026. *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation [Accessed 29 October 2026].
+14. Netlify. 2026. *Netlify Documentation — Deploy a site*. Available at: https://docs.netlify.com/ [Accessed 29 October 2026].
+15. Keep a Changelog. 2026. *Keep a Changelog 1.1.0*. Available at: https://keepachangelog.com/en/1.1.0/ [Accessed 29 October 2026].
 
 
 
