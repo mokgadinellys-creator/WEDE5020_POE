@@ -7,13 +7,23 @@
    
     <title>King's Car Wash | Premium Mobile Detailing</title>
 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="King's Car Wash offers premium mobile car detailing in Modjadjiskloof — exterior wash, interior detailing, full-service packages and doorstep pickup. Book your wash today.">
+    <meta name="keywords" content="car wash Modjadjiskloof, mobile car detailing Limpopo, premium car wash Ga-Kgapane, interior detailing, exterior car wash, King's Car Wash">
+    <meta name="author" content="Mokgadi Laura Selepe">
+    <meta property="og:title" content="King's Car Wash | Premium Mobile Detailing">
+    <meta property="og:description" content="Premium mobile car detailing and doorstep car wash services in Modjadjiskloof.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/kings-car-wash-hero-banner.jpeg">
+    <link rel="canonical" href="https://kingscarwash.netlify.app/index.html">
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
      
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -22,7 +32,7 @@
         <div>
             <div>
                 <a href="index.html">KING'S CAR WASH</a>
-                <button type="button" aria-label="Toggle navigation">☰</button>
+                <button type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
                 <nav>
                     <ul>
@@ -44,7 +54,7 @@
         <section>
             <div>
 
-                 <img src="images/king-car-wash-hero-banner.jpeg" alt="hero banner image">
+                 <img src="../images/king-car-wash-hero-banner.jpeg" alt="hero banner image">
 
                 <div>
 
@@ -110,6 +120,13 @@
             </div>
         </section>
 
+         <!-- Dynamic Testimonial Rotator -->
+        <section id="live-review">
+            <h2>Latest Review</h2>
+            <p id="liveReviewText" aria-live="polite">Loading…</p>
+            <p id="liveReviewAuthor" class="review-author"></p>
+        </section>
+
         <!-- CTA BANNER-->
         <section>
             <div>
@@ -131,11 +148,8 @@
         </div>
     </footer>
 
-     <script>
-        document.querySelector('header button').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('is-open');
-        });
-    </script>
+    <!-- External JS -->
+    <script src="../js/script.js"></script>
     
 </body>
 </html>
