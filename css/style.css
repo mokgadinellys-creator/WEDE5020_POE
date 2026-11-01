@@ -399,6 +399,7 @@ main > section:first-child > div > div > div:last-of-type img {
 
 .btn-outline:hover {
     background-color: var(--colour-gold);
+    border-color: var(--colour-gold-dark);
     color: var(--colour-white);
     transform: translateY(-3px);
     text-decoration: none;
@@ -1187,6 +1188,8 @@ textarea.invalid {
     text-align: right;
     margin-top: 0.5rem;
 }
+
+
 
 /* ============================================================
    25. RESPONSIVE ADJUSTMENTS FOR NEW COMPONENTS
