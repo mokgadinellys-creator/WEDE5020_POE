@@ -125,7 +125,7 @@ The website was tested across multiple screen sizes using browser developer tool
 ## How to Run Locally
 1. Clone the repo.
 2. Open `index.html` in any modern browser — no build step or backend required.
-3. Live version: https://YOUR-SITE-NAME.netlify.app/
+3. Live version: https://kings-car-wash.netlify.app/
 
 ## JavaScript Features
 | Page | Feature | File |
